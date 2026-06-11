@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🙂</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 940 460'%3E%3Cg fill='none' stroke='%232a2060' stroke-width='42' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M46 194C36 198 32 206 38 212C150 272 262 330 372 386C470 392 570 386 665 378C745 347 825 316 903 286'/%3E%3Cpath d='M426 92C434 86 444 85 449 86'/%3E%3Cpath d='M642 86C648 78 656 76 661 79'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background: #ffffff;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  a.face-link {
+    display: block;
+    width: min(80vw, 64vh);
+    opacity: 0;
+    animation: appear 600ms ease-out 100ms forwards;
+    transition: transform 250ms ease;
+    outline: none;
+  }
+  a.face-link:hover,
+  a.face-link:focus-visible {
+    transform: scale(1.04);
+  }
+  a.face-link:focus-visible .face g {
+    stroke: #4636a8;
+  }
+  a.face-link:active {
+    transform: scale(0.99);
+  }
+  .face {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @keyframes appear {
+    to { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    a.face-link { animation: none; opacity: 1; transition: none; }
+  }
+</style>
+</head>
+<body>
+  <a class="face-link"
+     href="https://takeaction.sandyhookpromise.org/a/foundation"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Visit the Sandy Hook Promise Foundation donation page">
+    <!-- Traced from the original pen drawing -->
+    <svg class="face" viewBox="0 0 940 460" role="img" aria-label="A hand-drawn smiley face">
+      <g fill="none" stroke="#2a2060" stroke-linecap="round" stroke-linejoin="round">
+        <!-- mouth: hooked left tip, straight descent, flat bottom, straight rise -->
+        <path stroke-width="13" d="M 46 194
+                 C 36 198 32 206 38 212
+                 C 150 272 262 330 372 386
+                 C 470 392 570 386 665 378
+                 C 745 347 825 316 903 286" />
+        <!-- the pen pooled a little where he lifted it -->
+        <circle cx="902" cy="287" r="9" fill="#2a2060" stroke="none" />
+        <!-- eyes: two quick ticks -->
+        <path stroke-width="14" d="M 426 92 C 434 86 444 85 449 86" />
+        <path stroke-width="15" d="M 642 86 C 648 78 656 76 661 79" />
+      </g>
+    </svg>
+  </a>
+</body>
+</html>
